@@ -26,7 +26,6 @@ On 2022-01-07 at 16:07 UTC, I detected an attack known as "Oski Stealer", which 
 - MAC address: 9c:5c:8e:32:58:f9
 - IP address: 192.168.1.216
 - Hostname: DESKTOP-GXMYNO2 
-- Domain:  spoonwatch.net
 - Windows user account: steve.smith 
 
 # Indicators of Compromise (IOCs)
