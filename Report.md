@@ -33,7 +33,9 @@ The compromised host details:
 ***
 ## Malicious traffic:
 
-Oski Stealer confidential and sensitive data from around 60 different applications, such as browsers, email clients and cryptocurrency wallets. Among its theft functions, it can also function as a Grabber and Loader.
+
+This malware uses two obfuscation techniques, string encryption and
+dynamic loading of DLLs and functions.
 
 Before stealing data from various applications, Oski sets up its "working environment" by downloading serval DLLs.
 
