@@ -17,7 +17,7 @@ This task located on the [malware-traffic.analysis.net](https://www.malware-traf
 # Executive Summary
 ***
 
-On 2022-01-07 at 16:07 UTC, I detected an attack known as "Oski Stealer", which is a credential stealing malware. The host name is DESKTOP-GXMYNO2 and the attacker's username is steve.smith. During the attack, files visible as .jpg hid the malicious programs with the .ddl extension. The following documentation describes the examination of these files.
+On 2022-01-07 at 16:07 UTC, I detected an attack known as "Oski Stealer", which is a credential stealing malware. The compromised host name is DESKTOP-GXMYNO2. During the attack, files visible as .jpg hid the malicious programs with the .ddl extension. The following documentation describes the examination of these files.
 
 
 # Details
