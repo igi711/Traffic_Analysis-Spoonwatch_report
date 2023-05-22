@@ -17,11 +17,12 @@ This task located on the [malware-traffic.analysis.net](https://www.malware-traf
 # Executive Summary
 ***
 
-On 2022-01-07 at 16:07 UTC, I detected an attack known as "Oski Stealer", which is a credential stealing malware. The compromised host name is DESKTOP-GXMYNO2. During the attack, files visible as .jpg hid the malicious programs with the .pdb extension. The following documentation describes the examination of these files.
+On 2022-01-07 at 16:07 UTC, detected an attack known as "Oski Stealer", which is a credential stealing malware. The compromised host name is DESKTOP-GXMYNO2.The following documentation describes the examination of these files.
 
 
 # Details
 ***
+The compromised host details:
 
 - MAC address: 9c:5c:8e:32:58:f9
 - IP address: 192.168.1.216
@@ -32,56 +33,87 @@ On 2022-01-07 at 16:07 UTC, I detected an attack known as "Oski Stealer", which 
 ***
 ## Malicious traffic:
 
+Oski Stealer confidential and sensitive data from around 60 different applications, such as browsers, email clients and cryptocurrency wallets. Among its theft functions, it can also function as a Grabber and Loader.
+
+Before stealing data from various applications, Oski sets up its "working environment" by downloading serval DLLs.
+
+
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/3.png)
- 
+
+The compromised host sent HTTP POST requests. After sending the POST requests, the compromised host started downloading the files.
+
 ***
  
  - Format: Portable executable for 80386 (PE)
-
+- File name: sqlite3.dll
  
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/18.png)
 
 ***
 
 - Format: Portable executable for 80386 (PE)
-- PDB file name: freebl3.pdb
+- File name: freebl3.dll
 
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/17.png)
 
 ***
 
 - Format: Portable executable for 80386 (PE)
-- PDB file name: mozglue.pdb
+- File name: mozglue.dll
 
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/16.png)
 
 ***
 
 - Format: Portable executable for 80386 (PE)
-- PDB File Name : msvcp140.i386.pdb
+- File Name : msvcp140.dll
 
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/15.png)
 
 ***
 
 - Format: Portable executable for 80386 (PE)
-- PDB file name: nss3.pdb
+- File name: nss3.dll
 
 ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/14.png)
  
  ***
  
  - Format: Portable executable for 80386 (PE)
- - PDB file name: softokn3.pdb
+ - File name: softokn3.dll
  
  ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/13.png)
   
   ***
   
  - Format: Portable executable for 80386 (PE)
- - PDB File Name : vcruntime140.i386.pdb
+ - File Name : vcruntime140.dll
    
  ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/12.png)
+
+    
+ ***
+ 
+ 
+ The compromised host sent an HTTP POST request over the HTTP port containing a .zip file containing credentials, several autocomplete text files, and cookies. 
+ The .zip file contains all the stolen files
+ 
+ ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/00.png)
+ 
+
+***
+
+Details of the compromised host.
+  
+ ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/01.png)
+   
+ ***
+   
+ A compromised host sends an HTTP POST request to a malicious IP address.
+   
+ ![Malicious traffic](https://github.com/igi711/Traffic_Analysis-Spoonwatch_report/blob/main/02.png)
+
+
 
     
 # Maintainers
