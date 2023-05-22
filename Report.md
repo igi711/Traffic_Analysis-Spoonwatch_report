@@ -7,7 +7,7 @@ Malware Traffic Analysis -- 2022-01-07 - TRAFFIC ANALYSIS EXERCISE - SPOONWATCH 
 - Executive Summary
 - Details
 - Indicators of Compromise (IOCs)
-- Maintainers
+- Maintainer
 
 # Introduction
 ***
@@ -118,7 +118,7 @@ Details of the compromised host.
 
 
     
-# Maintainers
+# Maintainer
 ***
 Brigitta Bujdosone Kovacs 
 - (ISC)² Candidate
